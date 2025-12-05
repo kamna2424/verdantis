@@ -8,6 +8,7 @@ import About from "./pages/About";
 import OurAim from "./pages/OurAim";
 import Contact from "./pages/Contact";
 import Auth from "./pages/Auth";
+import PlantAI from "./pages/PlantAI";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/our-aim" element={<OurAim />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/plant-ai" element={<PlantAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
