@@ -32,8 +32,15 @@ const Navigation = ({ isAuthenticated }: NavigationProps) => {
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/our-aim", label: "Our Aim" },
+    ...(isAuthenticated
+      ? [
+          { to: "/dashboard", label: "Dashboard" },
+          { to: "/suggestions", label: "Suggestions" },
+          { to: "/maintenance", label: "Maintenance" },
+          { to: "/plant-ai", label: "AI Tools" },
+        ]
+      : []),
     { to: "/contact", label: "Contact" },
-    ...(isAuthenticated ? [{ to: "/dashboard", label: "Dashboard" }] : []),
   ];
 
   return (
