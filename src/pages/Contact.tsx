@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Session } from "@supabase/supabase-js";
 import {
@@ -167,42 +167,21 @@ const Contact = () => {
                       <p className="text-muted-foreground">support@verdantis.com</p>
                     </div>
                   </div>
-
-                  <div className="flex items-start gap-4">
-                    <Phone className="w-6 h-6 text-primary mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-foreground">Phone</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <MapPin className="w-6 h-6 text-primary mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-foreground">Location</h3>
-                      <p className="text-muted-foreground">
-                        Green Valley Innovation Hub<br />
-                        San Francisco, CA 94102
-                      </p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-
-              <div className="bg-secondary/50 rounded-lg p-6">
-                <h3 className="font-semibold text-foreground mb-2">Office Hours</h3>
-                <p className="text-muted-foreground">
-                  Monday - Friday: 9:00 AM - 6:00 PM PST<br />
-                  Saturday: 10:00 AM - 4:00 PM PST<br />
-                  Sunday: Closed
-                </p>
               </div>
 
               <div className="bg-primary/10 rounded-lg p-6">
                 <h3 className="font-semibold text-foreground mb-2">Quick Response</h3>
                 <p className="text-muted-foreground">
-                  We typically respond to all inquiries within 24 hours during business days.
-                  For urgent matters, please call our support line.
+                  We typically respond to all inquiries within 24 hours.
+                </p>
+              </div>
+
+              <div className="bg-secondary/50 rounded-lg p-6">
+                <h3 className="font-semibold text-foreground mb-2">Team Verdantis</h3>
+                <p className="text-muted-foreground">
+                  Developed by Kamna Dwivedi, Vidhi Parmar, Bazila Khan & Simran Sahu
+                  under the guidance of Prof. Abhuday Tripathi
                 </p>
               </div>
             </div>
