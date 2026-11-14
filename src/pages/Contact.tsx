@@ -180,8 +180,7 @@ const Contact = () => {
               <div className="bg-secondary/50 rounded-lg p-6">
                 <h3 className="font-semibold text-foreground mb-2">Team Verdantis</h3>
                 <p className="text-muted-foreground">
-                  Developed by Kamna Dwivedi, Vidhi Parmar, Bazila Khan & Simran Sahu
-                  under the guidance of Prof. Abhuday Tripathi
+                  A plant-care platform developed by Team Verdantis.
                 </p>
               </div>
             </div>

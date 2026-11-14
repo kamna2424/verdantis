@@ -141,7 +141,6 @@ const Home = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto text-center text-muted-foreground space-y-2">
           <p className="font-medium">Made with ❤️ - Team Verdantis</p>
-          <p className="text-sm">Under the guidance of Prof. Abhuday Tripathi</p>
         </div>
       </footer>
     </div>
