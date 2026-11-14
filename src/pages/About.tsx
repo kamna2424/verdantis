@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
-import { Sprout, Brain, Users, GraduationCap } from "lucide-react";
+import { Sprout, Brain } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Session } from "@supabase/supabase-js";
 
@@ -21,13 +21,6 @@ const About = () => {
 
     return () => subscription.unsubscribe();
   }, []);
-
-  const teamMembers = [
-    "Kamna Dwivedi",
-    "Vidhi Parmar",
-    "Bazila Khan",
-    "Simran Sahu",
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -67,28 +60,12 @@ const About = () => {
             </Card>
           </div>
 
-          {/* Team Section */}
-          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-8 md:p-12 mb-16">
-            <div className="flex items-center gap-3 mb-6">
-              <GraduationCap className="w-8 h-8 text-primary" />
-              <h2 className="text-3xl font-bold text-foreground">Our Mentor</h2>
-            </div>
-            <p className="text-lg text-muted-foreground mb-8">
-              This project has been developed under the expert guidance of{" "}
-              <span className="font-semibold text-foreground">Prof. Abhuday Tripathi</span>
+          <div className="bg-secondary/30 rounded-lg p-8 md:p-12 mb-16">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Team Verdantis</h2>
+            <p className="text-lg text-muted-foreground">
+              Verdantis is built by a team focused on making practical, AI-powered plant care
+              accessible to everyone.
             </p>
-
-            <div className="flex items-center gap-3 mb-6">
-              <Users className="w-8 h-8 text-primary" />
-              <h2 className="text-3xl font-bold text-foreground">Team Verdantis</h2>
-            </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-              {teamMembers.map((member) => (
-                <Card key={member} className="p-4 text-center border-border bg-background/50">
-                  <p className="font-semibold text-foreground">{member}</p>
-                </Card>
-              ))}
-            </div>
           </div>
 
           <div className="bg-secondary/30 rounded-lg p-8 md:p-12">
@@ -115,7 +92,6 @@ const About = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto text-center text-muted-foreground space-y-2">
           <p className="font-medium">Made with ❤️ - Team Verdantis</p>
-          <p className="text-sm">Under the guidance of Prof. Abhuday Tripathi</p>
         </div>
       </footer>
     </div>

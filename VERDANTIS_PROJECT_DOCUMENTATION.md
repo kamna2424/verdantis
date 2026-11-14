@@ -25,15 +25,9 @@ Verdantis addresses these challenges through four core ML/DL-powered features:
 3. **AI Plant Assistant** - Natural Language Processing chatbot
 4. **Smart Care Recommendations** - ML-based personalized advice
 
-## 1.4 Team & Guidance
+## 1.4 Project Team
 
-**Development Team:**
-- Kamna Dwivedi
-- Vidhi Parmar
-- Bazila Khan
-- Simran Sahu
-
-**Project Guide:** Prof. Abhuday Tripathi
+Verdantis is developed by Team Verdantis.
 
 ---
 
@@ -630,7 +624,6 @@ The project showcases how modern AI technologies can be leveraged to solve real-
 ---
 
 **Document Prepared By:** Team Verdantis
-**Under Guidance Of:** Prof. Abhuday Tripathi
 **Date:** December 2024
 
 ---
